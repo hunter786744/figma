@@ -69,6 +69,10 @@ header{
     cursor: pointer;
     margin-right:30px ;
 }
+.header button:hover{
+    background-color:#F7941E;
+    color: white;
+}
 /* header css end */
 
 
@@ -82,7 +86,6 @@ header{
 }
 .con-1,.con-2{
     width: 50%;
-    height:700px;
 }
 .con-1{
     display: flex;
@@ -118,9 +121,14 @@ header{
     border-radius: 5px;
     cursor: pointer;
 }
+.con-1 button:hover{
+    background-color: #F1F1F2;
+    color: #F7941E;
+    border: none;
+    border:1px solid #F7941E ;
+}
 .con-2 img{
     width:100% ;
-    height:700px ;
 }
 
 /* section-1 css end */
@@ -136,11 +144,9 @@ header{
 }
 .con-3,.con-4{
     width: 50%;
-    height:600px;
 }
 .con-3 img{
     width:100% ;
-    height:600px ;
 }
 .con-4{
     display: flex;
@@ -176,6 +182,10 @@ header{
     border-radius:5px ;
     cursor: pointer;
 }
+.second button:hover{
+    background-color: #F7941E;
+    color:#F1F1F2 ;
+}
 /* section-2 css end */
 /* section-3 css start */
 .three{
@@ -191,6 +201,7 @@ header{
 .wraper-1,.wraper-2{
     display: flex;
     flex-direction: row;
+    width:50% ;
 }
 .wraper h1{
     font-size:32px ;
@@ -217,7 +228,7 @@ header{
     width:100%;
     background-color:#fafafa;
     margin:0 20px;
-    height: 390px;
+    padding-bottom:20px ;
 }
 .wrap-1:hover{
     background-color:white ;
@@ -291,6 +302,12 @@ header{
     background-color: #231F20;
     border-radius: 5px;
 }
+.btn-1:hover{
+    background-color: transparent;
+    color:#231F20 ;
+    border: none;
+    border: 1px solid #231F20;
+}
 .btn-2{
     width: 200px;
     height:48px ;
@@ -301,6 +318,10 @@ header{
     border: none;
     border:1px solid black ;
     border-radius:5px ;    
+}
+.btn-2:hover{
+    background-color:black ;
+    color:white;
 }
 /* section-4 css end */
 /* section-5 css start */
@@ -330,39 +351,36 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
 }
 .cop-1{
     width:30% ;
-    height: 370px;
 }
 .cop-1 img{
     width: 100%;
-    height:370px ;
 }
 .cop-2{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center ;
-    width:50% ;
+    width:60% ;
     background-color: #231F20;
-    height:370px ;
     color: white;
 }
 .cop-3{
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 .cop-3 p{
     font-size: 14px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 .cop-3 h1{
-    font-size: 48px;
+    font-size: 45px;
     font-weight:500 ;
-    width:492px ;
-    margin-bottom: 80px;
+    width:450px ;
+    margin-bottom: 60px;
 }
 .cop-3 a{
     text-decoration: none;
@@ -393,7 +411,7 @@ header{
 .article-1,.article-2{
     display: flex;
     flex-direction: column;
-    width:35% ;
+    width:40% ;
     margin:20px 30px ;
     padding:50px ;
 }
@@ -502,382 +520,224 @@ footer{
 /* footer css end */
 
 
+
 /* responsive css start */
-
-@media screen and (max-width:1366px){
-    .three{
-        margin-bottom:100px ;
-    }
-    .wrap-1,.wrap-2,.wrap-3,.wrap-4{
-        height:350px  ;
-    }
-    .article h2{
-        width: auto;
-        text-align: center;
-    }
-    .article p{
-        width: auto;
-        text-align: center;
-    }
-}
-@media screen and (max-width:1240px){
-    .con-1,.con-2{
-        height:600px ;
-    }
-    .con-2 img{
-        height:600px ;
-    }
-    .three{
-        margin-bottom:100px ;
-    }
-    .wrap-1,.wrap-2,.wrap-3,.wrap-4{
-        height:320px  ;
-    }
-    .wrap h2{
-        font-size:18px ;
-    }
-}
-
-
-
 @media screen and (max-width:1280px){
-    .cop-1{
-        height: 350px;
-    }
-    .cop-1 img{
-        height:350px ;
-    }
-    .cop-2{
-        height:350px ;
-    }
-    .cop-3 h1{
-        font-size: 45px;
-        font-weight:500 ;
-        width:480px ;
-        margin-bottom: 80px;
-    }
-}
-
-
-
-
-@media screen and (max-width:1100px){
-    .wrap-1,.wrap-2,.wrap-3,.wrap-4{
-        height:280px  ;
-    }
-    .cop-1{
-        height: 330px;
-    }
-    .cop-1 img{
-        width: 100%;
-        height:330px ;
-    }
-    .cop-2{
-        height:330px ;
-    }
-    .cop-3 p{
-        font-size: 14px;
-        margin-bottom: 20px;
-    }
-    .cop-3 h1{
-        font-size: 40px;
-        font-weight:500 ;
-        width:450px ;
-        margin-bottom: 80px;
-    }
-    .cop-3 a{
-        font-size:16px ;
-    }
-}
-
-
-@media screen and (max-width:1024px){
-    .con-1,.con-2{
-        height:500px ;
-    }
-    .con-2 img{
-        height:500px ;
-    }
-    .con-3,.con-4{
-        height:450px ;
-    }
-    .con-3 img{
-        height:450px ;
-    }
     .con-1 h1{
-        width: 300px;
-        font-size:40px ;
-        font-weight:bolder ;
+        width: 350px;
+        font-size:43px ;
         margin-bottom:20px ;
     }
     .con-1 p{
         font-size:18px ;
-        width: 400px;
-        font-weight:600 ;
+        width: 350px;
         margin-bottom:40px ;
     }
     .con-1 button{
         width:180px ;
         height:50px ;
+        font-size: 15px;
     }
     .second h1{
-        font-size:30px ;
-        margin-bottom:18px ;    
+        width: 350px;
+        font-size:32px ;
+        margin-bottom:20px ;    
     }
     .second p{
-        width:400px;
-        font-size: 17px;
+        font-size:18px ;
+        width: 350px;
         margin-bottom:30px ;
-        line-height:25px ;
+        line-height: 25px;
     }
     .second button{
-        width: 180px;
+        width:180px ;
         height:50px ;
-        font-size:18px ;
-    }
-    .cop-1{
-        height: 300px;
-    }
-    .cop-1 img{
-        height:300px ;
-    }
-    .cop-2{
-        height:300px ;
-        color: white;
-    }
-    .cop-3 h1{
-        font-size: 35px;
-        font-weight:500 ;
-        width:400px ;
-        margin-bottom: 80px;
-    }
-    .article h2{
-        font-size:20px ;
-    }
-    .article p{
-        font-size:13px ;
-    }
-}
-
-
-
-
-@media screen and (max-width:940px){
-    .links{
-        width:65% ;
-    }
-    .header button{
-        width:15% ;
-    }
-    .wrap{
-        flex-direction: column ;
-    }
-    .wrap-1,.wrap-2,.wrap-3,.wrap-4{
-        height:380px  ;
-        margin:10px 20px ;
-    }
-    .heading h1{
-        font-size: 25px;
-        font-weight:900;
-    }
-    .heading h2{
-        font-size:25px;
-        font-weight: 500;
-    }
-    .btn-1{
-        width: 150px;
-        height:40px ;
-        font-size:15px; 
-    }
-    .btn-2{
-        width:150px;
-        height:40px ;
-        font-size:15px ;    
-    }
-    .cop-1{
-        height: 250px;
-    }
-    .cop-1 img{
-        height:250px ;
-    }
-    .cop-2{
-        height:250px ;
-        color: white;
+        font-size: 15px;
     }
     .cop-3 p{
-        font-size:12px ;
+        font-size: 14px;
+        margin-bottom: 10px;
     }
     .cop-3 h1{
-        font-size: 30px;
+        font-size: 38px;
         font-weight:500 ;
-        width:300px ;
-        margin-bottom: 50px;
+        width:400px ;
+        margin-bottom: 40px;
     }
     .cop-3 a{
-        font-size:14px ;
-        width:80px ;
+        font-size:16px ;
     }
-    
+    .article-1,.article-2{
+        padding:0 50px;
+        width: 50%;
+    }
+    .article h2{
+        width: auto;
+    }
 }
 
 
-
-
-@media screen and (max-width:800px){
-    .con-1,.con-2{
-        height:350px ;
-    }
-    .con-2 img{
-        height:350px ;
-    }
-    .con-3,.con-4{
-        height:300px ;
-    }
-    .con-3 img{
-        height:300px ;
-    }
+@media screen and (max-width:1024px){
     .con-1 h1{
-        width: 200px;
+        width: 300px;
         font-size:30px ;
-        font-weight:bolder ;
         margin-bottom:15px ;
     }
     .con-1 p{
         font-size:15px ;
-        width: 250px;
-        font-weight:600 ;
-        margin-bottom:30px ;
+        width: 300px;
+        margin-bottom:35px ;
     }
     .con-1 button{
         width:150px ;
         height:40px ;
-        font-size:15px ;
+        font-size: 13px;
     }
     .second h1{
-        font-size:25px ;
-        margin-bottom:15px ;    
+        width: 300px;
+        font-size:29px ;
+        margin-bottom:10px ;    
     }
     .second p{
-        width:250px;
-        font-size: 15px;
-        margin-bottom:30px ;
-        line-height:18px ;
+        font-size:14px ;
+        width: 300px;
+        margin-bottom:20px ;
+        line-height:18px;
     }
     .second button{
-        width: 150px;
+        width:150px ;
         height:40px ;
-        font-size:15px ;
-    }
-    .wrap-1,.wrap-2,.wrap-3,.wrap-4{
-        height:350px  ;
-    }
-    .wraper h1{
-        font-size:25px ;
-        font-weight:500 ;
-        margin-bottom:15px ;
-    }
-    .wraper p{
-        font-size:15px ;
-        margin-bottom:30px ;
+        font-size: 13px;
     }
     .three{
-        margin:70px 50px 50px;
+        margin:70px  16px;
     }
-    .blog h1{
-        font-size:25px ;
-        font-weight: 500;
-        margin-bottom: 20px;
-    }
-    .blog p{
-        font-size:15px ;
-    }
-    .article{
+    .wraper-1,.wraper-2{
         flex-direction: column;
-        align-items: center;    
-    }
-    .article-1,.article-2{
-        width:80% ;
-        align-items: center;
+        margin:0 40px ;
         justify-content: center;
+        align-items: center;
     }
-    .nav-link p{
-        margin:0 60px ;
-    }
-    .nav-link a{
-        margin:0 20px ;
-    }
-}
-
-
-
-@media screen and (max-width:720px){
-    .cop-1{
-        height: 200px;
-    }
-    .cop-1 img{
-        height:200px ;
-    }
-    .cop-2{
-        height:200px ;
-        color: white;
+    .wrap-1,.wrap-2,.wrap-3,.wrap-4{
+        margin:15px 0 ;
     }
     .cop-3 p{
-        font-size:12px ;
-        margin-bottom: 10px;
+        font-size: 10px;
+        margin-bottom:7px;
     }
     .cop-3 h1{
-        font-size: 25px;
+        font-size: 27px;
         font-weight:500 ;
-        width:250px ;
-        margin-bottom: 40px;
+        width:300px ;
+        margin-bottom: 30px;
     }
     .cop-3 a{
-        font-size:14px ;
-        width:80px ;
+        font-size:13px ;
+    }
+    .article{
+        margin: 30px 0;
+    }
+    .article h2{
+        font-size: 19px;
+        margin-bottom:20px ;
+    }
+    .article p{
+        font-size: 12px;
+        margin-bottom: 30px;
+    }
+    .art-1{
+        font-size:12px ;
     }
 }
 
 
-
-@media screen and (max-width:640px){
-    .wrap-1,.wrap-2,.wrap-3,.wrap-4{
-        height:300px  ;
+@media screen and (max-width:768px){
+    .con-1 h1{
+        width: 250px;
+        font-size:25px ;
+        margin-bottom:10px ;
+    }
+    .con-1 p{
+        font-size:13px ;
+        width:250px;
+        margin-bottom:30px ;
+    }
+    .con-1 button{
+        width:130px ;
+        height:30px ;
+        font-size:11px;
+    }
+    .second h1{
+        width: 250px;
+        font-size:23px ;
+        margin-bottom:10px ;    
+    }
+    .second p{
+        font-size:11px ;
+        width: 250px;
+        margin-bottom:15px ;
+        line-height:15px;
+    }
+    .second button{
+        width:130px ;
+        height:30px ;
+        font-size: 11px;
     }
     .banner{
-        flex-direction: column;
+        padding:50px 0 ;
     }
-    .heading{
-        margin-bottom:15px ;
+    .heading h1{
+        font-size: 25px;
+    }
+    .heading h2{
+        font-size: 25px;
+    }
+    .btn-1{
+        width: 150px;
+        height:35px ;
+        font-size:15px ;
+    }
+    .btn-2{
+        width: 150px;
+        height:35px ;
+        font-size:15px ;    
     }
     .copule{
-        flex-direction:column;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
     .cop-1{
-        width:70% ;
-        height:auto;
-    }
-    .cop-1 img{
-        height:250px ;
+        width: 100%;
     }
     .cop-2{
-        height:250px ;
-        width:70% ;
-        color: white;
+        width: 100%;
+        padding:20px 0 ;
+        margin-top:-4px ;
+    }
+    .article-1,.article-2{
+        padding:20px ;
+    }
+    .eight{
+        padding:0 100px ;
+    }
+    .nav-link{
+        padding:50px 30px ;
     }
     .nav-link p{
         margin:0 50px ;
+        font-size: 16px;
     }
     .nav-link a{
-        text-decoration: none;
-        margin:0 15px ;
+        font-size:12px ;
+        margin:0 30px ;
+        font-weight: 600;
+        padding: 5px;
     }
 }
 
 
-
-@media screen and (max-width:480px){
+@media screen and (max-width:640px){
     .header{
         flex-direction: column;
         height: auto;
@@ -894,159 +754,138 @@ footer{
         justify-content: center;
         align-items: center;
     }
+    .links ul li{
+        margin:10px 0 ;
+    }
     .header button{
         margin-right:0 ;
         width: 120px;
         margin-top:10px ;
         margin-bottom:10px ;
     }
-    .links ul li{
-        margin:10px 0  ;
-    }
     .container-1{
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .con-1,.con-2{
-        width:100% ;    
     }
     .container-2{
         flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
     }
-    .con-3,.con-4{
-        width:100% ;
+    .con-1,.con-2,.con-3,.con-4{
+        width: 100%;
     }
-    .con-3 img{
-        height:300px ;
+    .con-1,.con-4{
+        padding:25px 10px ;
     }
-    .con-4{
-        margin-bottom:10px ;
+    .three{
+        margin:70px 16px 40px;
     }
     .wraper-1,.wraper-2{
+        width: 100%;
+    }
+    .wrap{
         flex-direction: column;
+        width: 100%;
         justify-content: center;
         align-items: center;
     }
     .wrap-1,.wrap-2,.wrap-3,.wrap-4{
-        height:400px  ;
-        margin:10 0 ;
-    }  
+        margin:15px 0 ;
+    }
     .wraper h1{
-        font-size:22px ;
+        font-size:26px ;
         font-weight:500 ;
-        margin-bottom:12px ;
+        margin-bottom:15px ;
         text-align: center;
     }
     .wraper p{
-        font-size:13px ;
-        margin-bottom:30px ;
+        font-size:15px ;
+        margin-bottom:70px ;
         text-align: center;
     }
-    .three{
-        margin:20 10 ;
+    .banner{
+        flex-direction: column;
     }
-    .heading h1{
-        font-size: 20px;
-        font-weight:900;
-    }
-    .heading h2{
-        font-size:20px;
-        font-weight: 500;
+    .heading,.btn{
+        width: 100%;
+        margin:10px 0 ;
     }
     .btn{
         flex-direction: column;
     }
+    .heading h1{
+        font-size: 22px;
+    }
+    .heading h2{
+        font-size: 22px;
+    }
     .btn-2{
-        margin:10px 0 0 ;
-    }
-    .banner{
-        padding:50px 0 ;
-    }
-    .blog{
-        margin:50px 0 ;
+        margin:13px 0 0 ;    
     }
     .blog h1{
-        font-size:20px ;
+        font-size:25px ;
         font-weight: 500;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
     }
     .blog p{
+        font-size:15px ;
+        text-align: center  ;
+        padding:0 10px ;
+    }
+    .cop-3{
+        justify-content: center;
+        align-items: center;
+    }
+    .cop-3 p{
+        font-size: 10px;
+        margin-bottom:7px;
+    }
+    .cop-3 h1{
+        font-size: 27px;
+        width:auto ;
+        text-align: center;
+        padding:0 10px ;
+    }
+    .cop-3 a{
         font-size:13px ;
         text-align: center;
     }
-    .cop-1{
-        width:90% ;
-        height:auto;
-    }
-    .cop-1 img{
-        height:250px ;
-    }
-    .cop-2{
-        height:250px ;
-        width:90% ;
-        color: white;
+    .article{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin:50px 0 ;
     }
     .article-1,.article-2{
-        width: 100%;
+        width:100% ;
+        text-align: center;
+        margin:5px 20px ;
+        justify-content: center;
+        align-items: center;
     }
     .eight{
         padding:0 100px ;
     }
     .nav-link{
+        padding:30px 0 ;
         flex-direction:column ;
     }
     .nav-link p{
-        margin:30px 0;
+        margin:20px 0 ;
+        font-size: 18px;
     }
     .nav-link a{
-        color: black;
-        font-size:14px ;
-        margin:10px 0;
-    }
-}
-
-@media screen and (max-width:425px){
-    .wrap-1,.wrap-2,.wrap-3,.wrap-4{
-        height:370px  ;
-    }
-}
-@media screen and (max-width:375px){
-    .wrap-1,.wrap-2,.wrap-3,.wrap-4{
-        height:330px  ;
-    }
-    .heading h1{
-        font-size: 20px;
-        font-weight:900;
-        text-align: center;
-    }
-    .heading h2{
-        font-size:20px;
-        font-weight: 500;
-        text-align: center;
+        font-size:15px ;
+        margin:5px 0 ;
     }
     .socail-links i{
-        margin:0 10px ;
+        width:30px ;
+        height: 30px;
+        line-height:30px ;
+        font-size:15px ;
+        margin:0 7px ;
     }
+    .copyright p{
+        font-size:12px ;
+    }
+}
 
-}
-@media screen and (max-width:320px){
-    .wrap-1,.wrap-2,.wrap-3,.wrap-4{
-        height:300px  ;
-    }
-    .cop-1{
-        width:100% ;
-        height:200px;
-    }
-    .cop-1 img{
-        height:200px ;
-    }
-    .cop-2{
-        height:200px ;
-        width:100% ;
-        color: white;
-    }
-}
 /* responsive css end */
